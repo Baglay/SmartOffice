@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Currency Info View Controller-->
+        <scene sceneID="1oz-Xr-hEo">
+            <objects>
+                <viewController storyboardIdentifier="DetailCurrencyInfoViewController" id="JFj-tg-fla" customClass="DetailCurrencyInfoViewController" customModule="smartOffice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VCD-o3-8s1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTR-zH-7xC">
+                                <rect key="frame" x="40" y="309" width="295" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ljp-KE-6Jz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OTR-zH-7xC" firstAttribute="centerY" secondItem="VCD-o3-8s1" secondAttribute="centerY" id="HaA-cZ-f31"/>
+                            <constraint firstItem="PCU-Mm-cVm" firstAttribute="trailing" secondItem="OTR-zH-7xC" secondAttribute="trailing" constant="40" id="PS3-oD-dac"/>
+                            <constraint firstItem="OTR-zH-7xC" firstAttribute="centerX" secondItem="VCD-o3-8s1" secondAttribute="centerX" id="vGL-G4-0zS"/>
+                            <constraint firstItem="OTR-zH-7xC" firstAttribute="leading" secondItem="PCU-Mm-cVm" secondAttribute="leading" constant="40" id="y9t-Sr-8w1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PCU-Mm-cVm"/>
+                    </view>
+                    <connections>
+                        <outlet property="info" destination="OTR-zH-7xC" id="tUH-gj-0Bn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tb9-Aq-5io" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-874.39999999999998" y="-180.35982008995504"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_smartOffice {
+  umbrella header "Pods-smartOffice-umbrella.h"
+
+  export *
+  module * { export * }
+}
